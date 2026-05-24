@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/edi/Documents/Trabajo/tarea age cape c#/old/tests/CashFlow.Tests/CashFlow.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj",
+        "projectName": "CashFlow.Core",
+        "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Data/CashFlow.Data.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Data/CashFlow.Data.csproj",
+        "projectName": "CashFlow.Data",
+        "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Data/CashFlow.Data.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj": {
+                "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Services/CashFlow.Services.csproj": {
+      "restore": {
+        "projectUniqueName": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Services/CashFlow.Services.csproj",
+        "projectName": "CashFlow.Services",
+        "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Services/CashFlow.Services.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj": {
+                "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "/Users/edi/Documents/Trabajo/tarea age cape c#/old/tests/CashFlow.Tests/CashFlow.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/tests/CashFlow.Tests/CashFlow.Tests.csproj",
+        "projectName": "CashFlow.Tests",
+        "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/tests/CashFlow.Tests/CashFlow.Tests.csproj",
+        "packagesPath": "/Users/edi/.nuget/packages/",
+        "outputPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/tests/CashFlow.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/edi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj": {
+                "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Core/CashFlow.Core.csproj"
+              },
+              "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Data/CashFlow.Data.csproj": {
+                "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Data/CashFlow.Data.csproj"
+              },
+              "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Services/CashFlow.Services.csproj": {
+                "projectPath": "/Users/edi/Documents/Trabajo/tarea age cape c#/old/src/CashFlow.Services/CashFlow.Services.csproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

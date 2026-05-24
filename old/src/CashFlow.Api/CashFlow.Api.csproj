@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup>
+    <ProjectGuid>{D4E5F6A7-B8C9-0123-DEF0-456789012345}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CashFlow.Api</RootNamespace>
+    <AssemblyName>CashFlow.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CashFlow.Core\CashFlow.Core.csproj">
+      <Project>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</Project>
+      <Name>CashFlow.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CashFlow.Services\CashFlow.Services.csproj">
+      <Project>{C3D4E5F6-A7B8-9012-CDEF-345678901234}</Project>
+      <Name>CashFlow.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CashFlow.Data\CashFlow.Data.csproj">
+      <Project>{B2C3D4E5-F6A7-8901-BCDE-F23456789012}</Project>
+      <Name>CashFlow.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Controllers\TransactionsController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

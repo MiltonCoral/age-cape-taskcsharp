@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup>
+    <ProjectGuid>{E5F6A7B8-C9D0-1234-EF01-567890123456}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CashFlow.Tests</RootNamespace>
+    <AssemblyName>CashFlow.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CashFlow.Core\CashFlow.Core.csproj">
+      <Project>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</Project>
+      <Name>CashFlow.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\CashFlow.Services\CashFlow.Services.csproj">
+      <Project>{C3D4E5F6-A7B8-9012-CDEF-345678901234}</Project>
+      <Name>CashFlow.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\CashFlow.Data\CashFlow.Data.csproj">
+      <Project>{B2C3D4E5-F6A7-8901-BCDE-F23456789012}</Project>
+      <Name>CashFlow.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TransactionServiceTests.cs" />
+    <Compile Include="ReportServiceTests.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

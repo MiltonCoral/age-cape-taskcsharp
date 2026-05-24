@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>CashFlow.Api</AssemblyName>
+    <RootNamespace>CashFlow.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CashFlow.Core\CashFlow.Core.csproj" />
+  </ItemGroup>
+</Project>

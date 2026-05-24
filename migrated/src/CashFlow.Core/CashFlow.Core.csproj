@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CashFlow.Core</AssemblyName>
+    <RootNamespace>CashFlow.Core</RootNamespace>
+  </PropertyGroup>
+</Project>
